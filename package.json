@@ -1,0 +1,24 @@
+{
+  "name": "chatbot-pro",
+  "version": "1.0.0",
+  "description": "Chatbot Pro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagodiaz7/chatbot-pro.git"
+  },
+  "author": "Thiago",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thiagodiaz7/chatbot-pro/issues"
+  },
+  "homepage": "https://github.com/thiagodiaz7/chatbot-pro#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "request": "^2.81.0"
+  }
+}
