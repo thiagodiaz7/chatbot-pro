@@ -52,7 +52,7 @@ app.post('/webhook/', function (req, res) {
                 sendButtonMessage(sender)
                 continue
             }
-            sendTextMessage(sender, "Text received, echo: " + text.substring(0, 200))
+            sendTextMessage(sender, "Eu não entendi o que você quis dizer com:" + text.substring(0, 200))
         }
 
         if (event.postback) {
