@@ -179,3 +179,10 @@ function sendButtonMessage(sender) {
         }
     })
 }
+
+
+
+// Criar uma persona de um instrutor
+// Ter um Hub de Soluções de Aprendizagem (HSA) ou mais conhecido como Material de Apoio que podemos chamar de "Continue aprendendo", "Recursos de Extra Classe (REC)"
+// onde teremos recursos de aprendizagens como Jogos, Chatbots, Aplicativos, Infográficos e etc.
+// 
