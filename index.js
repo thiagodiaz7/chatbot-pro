@@ -186,3 +186,13 @@ function sendButtonMessage(sender) {
 // Ter um Hub de Soluções de Aprendizagem (HSA) ou mais conhecido como Material de Apoio que podemos chamar de "Continue aprendendo", "Recursos de Extra Classe (REC)"
 // onde teremos recursos de aprendizagens como Jogos, Chatbots, Aplicativos, Infográficos e etc.
 // 
+
+//E se pudessemos acompanhar os condutores de primeira habilitação mesmo após o curso?
+//Utilizando o Facebook Messenger, conseguimos enviar mensagens periódicas de lembrete e de boa conduta
+//no trânsito. Por exemplo, procurar saber qual foi a ultima vêz que trocou o óleo, ou que olho a água
+//definir o perfil do usuário perguntando qual foi a ultima vez que dirigiu, ou que fez uma revisão do carro
+//podendo expandir as mensagens para retornar publicidade de empresas interessadas, autopeças, autoeletrico 
+//e serviços uteis para quem o recebe com base no perfil do usuário
+//as mensagens também podem conter texto de boas práticas e boa conduta no trânsito
+//lembretes de "Como você está dirigindo hoje?" pedindo para o mesmo atribuir uma nota para sua própria direção
+//
