@@ -102,20 +102,6 @@ function sendPlacasTransito(sender) {
                 "elements": [{
                     "title": "Parada obrigatória",
                     "subtitle": "Placas de Regulamentação",
-                    "image_url": "img/0046_R-1.jpg",
-                    "buttons": [{
-                        "type": "web_url",
-                        "url": "https://www.procondutor.com.br/#/home",
-                        "title": "Saiba mais"
-                    }, {
-                        "type": "postback",
-                        "title": "Outra pergunta",
-                        "payload": "Payload for first element in a generic bubble",
-                    }],
-                },
-                {
-                    "title": "Dê a preferência",
-                    "subtitle": "Placas de Regulamentação",
                     "image_url": "http://www.detran.se.gov.br/images/sinalizacao_transito/regulamentacao/R_1.jpg",
                     "buttons": [{
                         "type": "web_url",
@@ -126,50 +112,7 @@ function sendPlacasTransito(sender) {
                         "title": "Outra pergunta",
                         "payload": "Payload for first element in a generic bubble",
                     }],
-                },
-                {
-                    "title": "Sentido Proibido",
-                    "subtitle": "Placas de Regulamentação",
-                    "image_url": "http://www.detran.se.gov.br/images/sinalizacao_transito/regulamentacao/R_1.jpg",
-                    "buttons": [{
-                        "type": "web_url",
-                        "url": "https://www.procondutor.com.br/#/home",
-                        "title": "Saiba mais"
-                    }, {
-                        "type": "postback",
-                        "title": "Outra pergunta",
-                        "payload": "Payload for first element in a generic bubble",
-                    }],
-                },
-                {
-                    "title": "Cruzamento de Vias",
-                    "subtitle": "Placas de Advertência",
-                    "image_url": "http://www.detran.se.gov.br/images/sinalizacao_transito/regulamentacao/R_1.jpg",
-                    "buttons": [{
-                        "type": "web_url",
-                        "url": "https://www.procondutor.com.br/#/home",
-                        "title": "Saiba mais"
-                    }, {
-                        "type": "postback",
-                        "title": "Outra pergunta",
-                        "payload": "Payload for first element in a generic bubble",
-                    }],
-                },
-                {
-                    "title": "Curva acentuada à direita",
-                    "subtitle": "Placas de Advertência",
-                    "image_url": "http://www.detran.se.gov.br/images/sinalizacao_transito/regulamentacao/R_1.jpg",
-                    "buttons": [{
-                        "type": "web_url",
-                        "url": "https://www.procondutor.com.br/#/home",
-                        "title": "Saiba mais"
-                    }, {
-                        "type": "postback",
-                        "title": "Outra pergunta",
-                        "payload": "Payload for first element in a generic bubble",
-                    }],
-                },
-                {
+                }, {
                     "title": "Curva acentuada à esquerda",
                     "subtitle": "Placas de Advertência",
                     "image_url": "http://www.detran.se.gov.br/images/sinalizacao_transito/advertencia/A_1a.jpg",
