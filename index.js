@@ -49,7 +49,7 @@ app.post('/webhook/', function (req, res) {
         if (event.message && event.message.text) {
             text = event.message.text
             if (text === 'Teste') {
-                quick_replies(sender)
+                sendquick_replies(sender)
                 continue
             }
         }
@@ -189,29 +189,15 @@ function sendButtonMessage(sender) {
     })
 }
 
-function quick_replies(sender) {
+function sendquick_replies(sender) {
     messageData = {
-        "attachment":{
-          "type":"template",
-          "message":{
-    "quick_replies":[
-      {
-        "content_type":"text",
-        "title":"Search",
-        "payload":"<POSTBACK_PAYLOAD>",
-        "image_url":"http://example.com/img/red.png"
-      },
-      {
-        "content_type":"location"
-      },
-      {
-        "content_type":"text",
-        "title":"Something Else",
-        "payload":"<POSTBACK_PAYLOAD>"
-      }
-    ]
-          }
-        }
+         "quick_replies":[
+              {
+                "content_type":"text",
+                "title":"Red",
+                "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_RED"
+              }
+            ]
     }
     request({
         url: 'https://graph.facebook.com/v2.6/me/messages',
