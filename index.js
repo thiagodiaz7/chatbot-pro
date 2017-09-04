@@ -49,7 +49,7 @@ app.post('/webhook/', function (req, res) {
         if (event.message && event.message.text) {
             text = event.message.text
             if (text === 'Teste') {
-                sendquick_replies(sender)
+                sendquickreplies(sender)
                 continue
             }
         }
@@ -189,7 +189,7 @@ function sendButtonMessage(sender) {
     })
 }
 
-function sendquick_replies(sender) {
+function sendquickreplies(sender) {
     messageData = {
          "quick_replies":[
               {
