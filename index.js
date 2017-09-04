@@ -40,11 +40,13 @@ app.post('/webhook/', function (req, res) {
         sender = event.sender.id
         if (event.message && event.message.text) {
             text = event.message.text
-            if (text === 'Generic') {
+            if (text === 'Texto') {
                 sendGenericMessage(sender)
                 continue
             }
         }
+
+
 
         if (event.message && event.message.text) {
             text = event.message.text
@@ -195,4 +197,4 @@ function sendButtonMessage(sender) {
 //e serviços uteis para quem o recebe com base no perfil do usuário
 //as mensagens também podem conter texto de boas práticas e boa conduta no trânsito
 //lembretes de "Como você está dirigindo hoje?" pedindo para o mesmo atribuir uma nota para sua própria direção
-//
+//teste
