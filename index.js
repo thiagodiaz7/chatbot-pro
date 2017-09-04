@@ -40,8 +40,8 @@ app.post('/webhook/', function (req, res) {
         sender = event.sender.id
         if (event.message && event.message.text) {
             text = event.message.text
-            if (text === 'Texto') {
-                sendGenericMessage(sender)
+            if (text === 'Placas de trânsito') {
+                sendPlacasTransito(sender)
                 continue
             }
         }
@@ -93,32 +93,32 @@ function sendTextMessage(sender, text) {
 
 
 
-function sendGenericMessage(sender) {
+function sendPlacasTransito(sender) {
     messageData = {
         "attachment": {
             "type": "template",
             "payload": {
                 "template_type": "generic",
                 "elements": [{
-                    "title": "First card",
-                    "subtitle": "Element #1 of an hscroll",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "title": "Parada obrigatória",
+                    "subtitle": "Placas de Regulamentação",
+                    "image_url": "http://www.detran.se.gov.br/images/sinalizacao_transito/regulamentacao/R_1.jpg",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://www.messenger.com",
-                        "title": "web url"
+                        "url": "https://www.procondutor.com.br/#/home",
+                        "title": "Saiba mais"
                     }, {
                         "type": "postback",
-                        "title": "Postback",
+                        "title": "Outra pergunta",
                         "payload": "Payload for first element in a generic bubble",
                     }],
                 }, {
-                    "title": "Second card",
-                    "subtitle": "Element #2 of an hscroll",
-                    "image_url": "http://messengerdemo.parseapp.com/img/gearvr.png",
+                    "title": "Curva acentuada à esquerda",
+                    "subtitle": "Placas de Advertência",
+                    "image_url": "http://www.detran.se.gov.br/images/sinalizacao_transito/advertencia/A_1a.jpg",
                     "buttons": [{
                         "type": "postback",
-                        "title": "Postback",
+                        "title": "Outra pergunta",
                         "payload": "Payload for second element in a generic bubble",
                     }],
                 }]
