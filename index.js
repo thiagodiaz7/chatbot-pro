@@ -46,6 +46,13 @@ app.post('/webhook/', function (req, res) {
             }
         }
 
+        if (event.message && event.message.text) {
+            text = event.message.text
+            if (text === 'Teste') {
+                quick_replies(sender)
+                continue
+            }
+        }
 
 
         if (event.message && event.message.text) {
@@ -181,6 +188,48 @@ function sendButtonMessage(sender) {
         }
     })
 }
+
+function quick_replies(sender) {
+    messageData = {
+        "attachment":{
+          "type":"template",
+          "message":{
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"Search",
+        "payload":"<POSTBACK_PAYLOAD>",
+        "image_url":"http://example.com/img/red.png"
+      },
+      {
+        "content_type":"location"
+      },
+      {
+        "content_type":"text",
+        "title":"Something Else",
+        "payload":"<POSTBACK_PAYLOAD>"
+      }
+    ]
+          }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
 
 
 
